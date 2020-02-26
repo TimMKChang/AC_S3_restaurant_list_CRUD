@@ -1,0 +1,55 @@
+<div class="container my-5 bg-light p-5" style="border-radius: 50px;">
+
+  <form action="/restaurants/{{restaurant._id}}?_method=PUT" method="POST">
+
+    <label for="name">
+      <h4>Restaurant Chinese Name</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="name" name="name" value="{{restaurant.name}}">
+
+    <label for="name_en">
+      <h4>Restaurant English Name</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="name_en" name="name_en" value="{{restaurant.name_en}}">
+
+    <label for="category">
+      <h4>Category</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="category" name="category" value="{{restaurant.category}}">
+
+    <label for="image">
+      <h4>Image URL</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="image" name="image" value="{{restaurant.image}}">
+
+    <label for="location">
+      <h4>Location</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="location" name="location" value="{{restaurant.location}}">
+
+    <label for="phone">
+      <h4>Phone</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="phone" name="phone" value="{{restaurant.phone}}">
+
+    <label for="google_map">
+      <h4>Google Map URL</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="google_map" name="google_map" value="{{restaurant.google_map}}">
+
+    <label for="rating">
+      <h4>Rating</h4>
+    </label>
+    <input type="text" class="form-control mb-3" id="rating" name="rating" value="{{restaurant.rating}}">
+
+    <label for="description">
+      <h4>Description</h4>
+    </label>
+    <textarea rows="4" class="form-control mb-3" id="description"
+      name="description">{{restaurant.description}}</textarea>
+
+    <button type="submit" class="btn btn-secondary my-3">Edit</button>
+
+  </form>
+
+</div>
