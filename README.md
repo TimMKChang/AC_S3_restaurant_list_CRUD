@@ -9,15 +9,19 @@ Built by
 - [method-override](https://www.npmjs.com/package/method-override)
 
 ## Project Preview
-- Show all restaurants
+#### Show all restaurants
 ![Project Preview](/public/image/restaurant_list_CRUD_preview.PNG)
-- Create
+
+#### Create
 ![Project Preview](/public/image/restaurant_list_CRUD_preview_2.PNG)
-- Detail
+
+#### Detail
 ![Project Preview](/public/image/restaurant_list_CRUD_preview_3.PNG)
-- Edit 
+
+#### Edit 
 ![Project Preview](/public/image/restaurant_list_CRUD_preview_4.PNG)
-- Delete
+
+#### Delete
 ![Project Preview](/public/image/restaurant_list_CRUD_preview_5.PNG)
 
 ## Features
