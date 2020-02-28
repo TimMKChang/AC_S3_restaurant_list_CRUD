@@ -50,7 +50,9 @@
     <div class="col-12 col-sm-6 col-md-4">
       <a href="/restaurants/{{this._id}}" class="text-secondary">
         <div class="card mb-3">
-          <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
+          <div class="img-bg">
+            <img class="card-img-top d-block mx-auto p-2" src="{{this.image}}" alt="{{this.name}}">
+          </div>
           <div class="card-body p-3">
             <h4 class="card-title mb-1 text-primary">{{this.name}}</h4>
 
