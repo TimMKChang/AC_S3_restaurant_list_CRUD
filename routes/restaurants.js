@@ -13,19 +13,17 @@ router.get('/', (req, res) => {
   const sortOrder = req.query.sortOrder || 'desc'
   const showSortText = showSort(req.query.sortField, req.query.sortOrder)
 
-  Restaurant.find()
+  const _regex = new RegExp(search_keyword, "i");
+  Restaurant.find({ $or: [{ name: { $regex: _regex } }, { category: { $regex: _regex } }] })
     .sort({ [sortField]: sortOrder })
     .lean()
     .then(restaurants => {
-      const filtered_restaurants = restaurants.filter(restaurant => {
-        return restaurant.name.toLowerCase().includes(search_keyword.toLowerCase()) || restaurant.category.includes(search_keyword)
-      })
 
-      filtered_restaurants.forEach(restaurant => {
+      restaurants.forEach(restaurant => {
         restaurant.ratingHTML = ratingStar(restaurant.rating)
       })
 
-      return res.render('index', { restaurants: filtered_restaurants, search_keyword, showSortText })
+      return res.render('index', { restaurants, search_keyword, showSortText })
     })
     .catch(err => {
       return console.error(err)
