@@ -17,6 +17,10 @@ function ratingStar(restaurantRating) {
     ratingHTML += `<i class="fas fa-star"></i>`
   }
 
+  if (ratingInteger === 5) {
+    return ratingHTML
+  }
+
   if (ratingDecimal <= 0.25) {
     ratingHTML += `<i class="far fa-star"></i>`
   } else if (ratingDecimal >= 0.75) {

@@ -45,7 +45,7 @@ router.post('/', (req, res) => {
     location: req.body.location,
     phone: req.body.phone,
     google_map: req.body.google_map,
-    rating: req.body.rating,
+    rating: Number(req.body.rating).toFixed(1),
     description: req.body.description
   })
 
@@ -89,7 +89,7 @@ router.put('/:id', (req, res) => {
       restaurant.location = req.body.location
       restaurant.phone = req.body.phone
       restaurant.google_map = req.body.google_map
-      restaurant.rating = req.body.rating
+      restaurant.rating = Number(req.body.rating).toFixed(1)
       restaurant.description = req.body.description
       restaurant.updated_time = Date()
 
