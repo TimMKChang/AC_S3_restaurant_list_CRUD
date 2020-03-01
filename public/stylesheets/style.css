@@ -34,7 +34,7 @@ header .restaurant-title {
 #toTop {
   position: absolute;
   top: 75vh;
-  left: 100px;
+  left: 6vw;
   font-size: 4rem;
   z-index: 9999;
   color: #ffffff;
@@ -48,8 +48,8 @@ header .restaurant-title {
   transition-timing-function: ease;
 }
 
-.fas {
-  vertical-align: top
+#toTop-icon {
+  vertical-align: top;
 }
 
 .search-bar .search-bar-outer {
@@ -88,14 +88,8 @@ header .restaurant-title {
 }
 
 .card img {
-  width: auto;
-  max-width: 100%;
   height: 250px;
-  object-fit: contain;
-}
-
-.card .img-bg {
-  background-color: #fce2cf;
+  object-fit: cover;
 }
 
 .card-title{
@@ -107,35 +101,4 @@ header .restaurant-title {
 .restaurant-category {
   color: #666666;
   font-size: 0.8rem;
-}
-
-.restaurant-show-title {
-  position: relative;
-  top: -100px;
-  color: white;
-  text-align: center;
-  font-size: 3rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (max-width: 992px) {
-  
-  .card img{
-    height: 115px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  
-  .restaurant-show-title {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  
-  .card img{
-    height: auto;
-  }
-  
 }
