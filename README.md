@@ -37,9 +37,11 @@ Built by
 >git clone https://github.com/TimMKChang/AC_S3_restaurant_list_CRUD.git
 2. install packages
 >npm install
-3. run the server
+3. run seeder in /models/seeds
+>node restaurantSeeder.js
+4. run the server
 >npm run dev
-4. check in cmd
+5. check in cmd
 >App is listening on [localhost:3000](http://localhost:3000)
 
 ## Contributor

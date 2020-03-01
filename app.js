@@ -24,8 +24,6 @@ app.set('view engine', 'handlebars')
 
 app.use('/', express.static('public'))
 
-const Restaurant = require('./models/restaurant')
-
 // routes
 app.use('/', require('./routes/home'))
 app.use('/restaurants', require('./routes/restaurants'))
