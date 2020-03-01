@@ -13,6 +13,12 @@ router.get('/', (req, res) => {
   const sortOrder = req.query.sortOrder || 'desc'
   const showSortText = showSort(req.query.sortField, req.query.sortOrder)
 
+  // avoid special characters
+  const specialCharacters = /[\\^$*+?.():=![\]{}<>'"-/%]/
+  if (specialCharacters.test(search_keyword)) {
+    return res.redirect('/restaurants')
+  }
+
   const _regex = new RegExp(search_keyword, "i");
   Restaurant.find({ $or: [{ name: { $regex: _regex } }, { category: { $regex: _regex } }] })
     .sort({ [sortField]: sortOrder })
