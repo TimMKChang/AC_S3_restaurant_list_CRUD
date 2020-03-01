@@ -31,6 +31,24 @@ header .restaurant-title {
   text-shadow: 30px 20px 0 #000000;
 }
 
+#toTop {
+  position: fixed;
+  top: 50px;
+  left: 100px;
+  font-size: 4rem;
+  z-index: 9999;
+  color: #c0c0c0;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fas {
+  vertical-align: top
+}
+
 .search-bar .search-bar-outer {
   margin: 0 auto;
   max-width: 680px;

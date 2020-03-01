@@ -18,7 +18,7 @@
 
   <header>
     <!-- navigation -->
-    <nav class="navbar navbar-light bg-primary">
+    <nav class="navbar navbar-light bg-primary" id="navbar">
       <div class="container">
         <a class="navbar-brand text-light" href="/restaurants">
           <i class="fas fa-utensils mr-2" style="font-size: 2rem;"></i>
@@ -32,6 +32,8 @@
     <div class="banner">
       <div class="restaurant-title text-center">Tim's Restaurant List</div>
     </div>
+
+    <a id="toTop" class="text-center" href="#navbar"><i class="fas fa-angle-double-up"></i></a>
   </header>
 
   {{{body}}}
@@ -51,7 +53,7 @@
   {{!-- SweetAlert --}}
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   {{!-- main.js --}}
-  <script src="/javascripts/doAlert.js"></script>
+  <script src="/javascripts/main.js"></script>
 
 </body>
 

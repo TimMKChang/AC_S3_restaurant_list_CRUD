@@ -34,3 +34,9 @@ doAlert = {
     }
   },
 }
+
+// setInterval(function () { console.log(window.scrollY) }, 100);
+
+// window.addEventListener('scroll', function (event) {
+//   console.log(window.scrollY)
+// })
