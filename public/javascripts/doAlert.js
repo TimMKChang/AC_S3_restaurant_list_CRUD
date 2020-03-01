@@ -17,4 +17,20 @@ doAlert = {
         }
       });
   },
+  create_alert() {
+    const nameInput = document.querySelector('input[id="name"]')
+    if (nameInput.value === '') {
+      event.preventDefault();
+
+      swal({
+        title: "Please add more information!",
+        text: "Restaurant Chinese Name is a required field!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+
+      return false
+    }
+  },
 }
