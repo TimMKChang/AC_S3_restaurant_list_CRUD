@@ -32,17 +32,20 @@ header .restaurant-title {
 }
 
 #toTop {
-  position: fixed;
-  top: 50px;
+  position: absolute;
+  top: 75vh;
   left: 100px;
   font-size: 4rem;
   z-index: 9999;
-  color: #c0c0c0;
+  color: #ffffff;
 
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
 .fas {
